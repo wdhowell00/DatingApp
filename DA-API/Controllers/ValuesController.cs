@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DA_API.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DA_API.Controllers
 {
@@ -10,18 +13,27 @@ namespace DA_API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        private readonly DAContext _context;
+
+        public ValuesController(DAContext context)
         {
-            return new string[] { "value1", "value2" };
+            _context = context;
+        }
+        // GET api/values
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> GetValue()
+        {
+            var query = await _context.Values.ToListAsync();
+            return Ok(query);
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public async Task<IActionResult> GetValue(int id)
         {
-            return "value";
+            var query = await _context.Values.FirstOrDefaultAsync(x => x.Id == id);
+            return Ok(query);
         }
 
         // POST api/values
