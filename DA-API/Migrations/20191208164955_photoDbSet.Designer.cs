@@ -4,14 +4,16 @@ using DA_API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DA_API.Migrations
 {
     [DbContext(typeof(DAContext))]
-    partial class DAContextModelSnapshot : ModelSnapshot
+    [Migration("20191208164955_photoDbSet")]
+    partial class photoDbSet
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,7 +35,7 @@ namespace DA_API.Migrations
 
                     b.Property<string>("PhotoUrl");
 
-                    b.Property<int>("UserId");
+                    b.Property<int?>("UserId");
 
                     b.HasKey("Id");
 
@@ -94,10 +96,9 @@ namespace DA_API.Migrations
 
             modelBuilder.Entity("DA_API.Models.Photo", b =>
                 {
-                    b.HasOne("DA_API.Models.User", "User")
+                    b.HasOne("DA_API.Models.User")
                         .WithMany("Photos")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }
