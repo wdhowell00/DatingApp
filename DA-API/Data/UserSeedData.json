@@ -14,7 +14,7 @@
     "Country": "Burundi",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/women/3.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/women/3.jpg",
         "isMain": true,
         "description": "Non deserunt labore sunt ex laboris et adipisicing ullamco officia minim."
       }
@@ -35,7 +35,7 @@
     "Country": "Mongolia",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/women/49.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/women/49.jpg",
         "isMain": true,
         "description": "Elit culpa eu excepteur ut elit tempor nulla duis dolore."
       }
@@ -56,7 +56,7 @@
     "Country": "Poland",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/women/24.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/women/24.jpg",
         "isMain": true,
         "description": "Veniam dolore nisi magna laboris minim id pariatur officia."
       }
@@ -77,7 +77,7 @@
     "Country": "Bouvet Island",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/women/74.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/women/74.jpg",
         "isMain": true,
         "description": "Veniam velit amet tempor laboris reprehenderit deserunt quis do veniam."
       }
@@ -98,7 +98,7 @@
     "Country": "Zambia",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/women/33.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/women/33.jpg",
         "isMain": true,
         "description": "Ipsum enim cillum ad nisi consequat cillum ipsum ullamco tempor."
       }
@@ -119,7 +119,7 @@
     "Country": "Tuvalu",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/men/90.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/men/90.jpg",
         "isMain": true,
         "description": "Irure cupidatat magna aute et dolore aliquip reprehenderit dolor irure."
       }
@@ -140,7 +140,7 @@
     "Country": "Canada",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/men/96.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/men/96.jpg",
         "isMain": true,
         "description": "Magna duis consectetur sit ut commodo non eiusmod."
       }
@@ -161,7 +161,7 @@
     "Country": "Paraguay",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/men/4.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/men/4.jpg",
         "isMain": true,
         "description": "Cupidatat veniam ea magna cillum velit minim non minim tempor ipsum excepteur."
       }
@@ -182,7 +182,7 @@
     "Country": "Pakistan",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/men/76.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/men/76.jpg",
         "isMain": true,
         "description": "Amet officia enim pariatur mollit tempor in ut."
       }
@@ -203,7 +203,7 @@
     "Country": "Viet Nam",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/men/14.jpg",
+        "PhotoUrl": "https://randomuser.me/api/portraits/men/14.jpg",
         "isMain": true,
         "description": "Nulla nisi tempor sint cillum aliqua esse aute."
       }
