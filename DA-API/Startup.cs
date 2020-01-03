@@ -43,6 +43,7 @@ namespace DA_API
                 });
             services.AddDbContext<DAContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DAContext")));
             services.AddCors();
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddAutoMapper(typeof(DatingRepository).Assembly);
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>

@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace DA_API.Models
+namespace DA_API.Data.DTOs
 {
-    public class Photo
+    public class PhotoForReturnDTO
     {
         public int Id { get; set; }
         public string PhotoUrl { get; set; }
@@ -10,7 +13,5 @@ namespace DA_API.Models
         public DateTime DateAdded { get; set; }
         public bool IsMain { get; set; }
         public string PublicId { get; set; }
-        public User User { get; set; }
-        public int UserId { get; set; }
     }
 }
