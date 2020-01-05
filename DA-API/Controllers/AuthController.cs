@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using DA_API.Data;
 using DA_API.Data.DTOs;
 using DA_API.Interfaces;
@@ -23,12 +24,14 @@ namespace DA_API.Controllers
         private readonly DAContext _context;
         private readonly IAuthRepository _repo;
         private readonly IConfiguration _config;
+        private readonly IMapper _mapper;
 
-        public AuthController(DAContext context, IAuthRepository repo, IConfiguration config)
+        public AuthController(DAContext context, IAuthRepository repo, IConfiguration config, IMapper mapper)
         {
             _context = context;
             _repo = repo;
             _config = config;
+            _mapper = mapper;
         }
 
         [HttpPost("register")]
@@ -85,8 +88,11 @@ namespace DA_API.Controllers
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
 
+            var user = _mapper.Map<UserForListDTO>(userFromRepo);
+
             return Ok(new {
-                token = tokenHandler.WriteToken(token)
+                token = tokenHandler.WriteToken(token),
+                user
             });
         }
     }

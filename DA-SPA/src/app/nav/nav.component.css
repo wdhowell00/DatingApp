@@ -5,3 +5,9 @@
 .dropdown-item {
     cursor: pointer;
 }
+
+#avatar {
+    max-height: 50px;
+    border: 2px solid white;
+    display: inline;
+}
