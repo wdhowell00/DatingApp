@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DA_API.Data.DTOs;
+using DA_API.Helpers;
 using DA_API.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace DA_API.Controllers
 {
+    [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
