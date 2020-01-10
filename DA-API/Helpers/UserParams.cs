@@ -24,5 +24,8 @@ namespace DA_API.Helpers
         public int MinAge { get; set; } = 18;
         public int MaxAge { get; set; } = 99;
 
+        //Sorting
+        public string OrderBy { get; set; }
+
     }
 }
