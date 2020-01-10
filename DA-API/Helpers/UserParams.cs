@@ -7,6 +7,7 @@ namespace DA_API.Helpers
 {
     public class UserParams
     {
+        //Pagination
         private const int MaxPageSize = 25; 
         public int PageNumber { get; set; } = 1;
         private int pageSize = 10;
@@ -16,6 +17,12 @@ namespace DA_API.Helpers
             get { return pageSize; }
             set { pageSize =(value > MaxPageSize) ? MaxPageSize : value ;}
         }
+
+        //Filtering
+        public int UserId { get; set; }
+        public string Gender { get; set; }
+        public int MinAge { get; set; } = 18;
+        public int MaxAge { get; set; } = 99;
 
     }
 }
