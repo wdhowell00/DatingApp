@@ -16,5 +16,6 @@ namespace DA_API.Interfaces
         Task<User> GetUser(int id);
         Task<Photo> GetPhoto(int id);
         Task<Photo> GetMainPhotoForUser(int userId);
+        Task<Like> GetLike(int userId, int recipientId);
     }
 }

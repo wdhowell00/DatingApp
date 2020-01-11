@@ -27,5 +27,9 @@ namespace DA_API.Helpers
         //Sorting
         public string OrderBy { get; set; }
 
+        //Likes
+        public bool Likees { get; set; } = false;
+        public bool Likers { get; set; } = false;
+
     }
 }
