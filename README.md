@@ -2,6 +2,8 @@
 
 A full stack demo project highlighting the following technologies:
 
+Utilizing Repository Pattern
+
  - .Net Core (2.2.x)
  - Angular 8
  - Entity Framework
