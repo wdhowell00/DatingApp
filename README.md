@@ -20,9 +20,11 @@ Please view the live demo at:
 
 To highlight some of the common requirements of enterprise projects there are several specific challenges I sought to address with this demo.
 
- 1. Authentication (user based authentication within the app restricting content and functionality based on the logged in user)
- 2. Secure RESTful API connections
+ 1. Authentication (user based authentication within the app restricting content and functionality)
+ 2. Standard Secure RESTful API connections
  3. 3rd Party Library integration
  4. Remote SQL Access
  5. Angular Data Access and manipulation
  6. Build/Publish to Cloud Hosted environment
+ 7. Code First Design
+ 8. Data Centric Design
